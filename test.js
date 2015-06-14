@@ -69,7 +69,7 @@ var app = {
                 db.executeSql(
                     'select * from tt',
                     null,
-                    function(res) { console.log('success first row:' + JSON.stringify(res.rows.item(0))) },
+                    function(res) { console.log('success length: ' + res.rows.length + ' first row:' + JSON.stringify(res.rows.item(0))) },
                     function(err) { console.log('error') }
                 );
             },

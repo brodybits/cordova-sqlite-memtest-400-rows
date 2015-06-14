@@ -53,7 +53,7 @@ var app = {
 
         db.transaction(function(tx) {
             tx.executeSql(cq);
-            for (i=1; i<=20; ++i) {
+            for (i=1; i<=400; ++i) {
                 var vv = [];
                 for (j=1; j<=25; ++j) vv.push('teststringteststring-' + i + '-' + j);
                 for (j=1; j<=5; ++j) vv.push(i*100 + j);
